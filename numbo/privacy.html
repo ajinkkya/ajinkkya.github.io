@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Numbo — Privacy Policy</title>
+<!--
+  Numbo privacy policy — [19.4], CL-F19-20260925-1100-001.
+
+  SOURCE OF TRUTH: this file, in docs/launch/site/ of the private numbo_two repository.
+  PUBLISHED COPY:  the public GitHub Pages site. Copy this file there; never edit the published
+                   copy directly, or the two drift and nobody knows which one is the policy.
+
+  Published 2026-09-27 (effective date in the page). Placeholders are marked <mark class="todo">
+  — there are none left; keep it that way before any republish.
+  🔴 This page describes the SHIPPED app. When an SDK, a permission or a data flow changes,
+     update this page in the same change, re-measure the release permission set, and update the
+     Play Data safety form and Apple's privacy labels to match. A policy that describes an
+     earlier version of the app is a store-policy violation, not a stale document.
+
+  Standalone by design: no external scripts, fonts or images, so it renders offline and loads
+  instantly from the store listing link.
+-->
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#fef7ff; --ink:#1d1b20; --muted:#5f5a66; --line:#e4dde8; --accent:#8a5a00; --card:#ffffff;
+    --todo-bg:#ffe066; --todo-ink:#1d1b20;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141218; --ink:#ece6f0; --muted:#aaa3b3; --line:#34303c; --accent:#ffb951; --card:#1e1b24; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  [hidden]{display:none!important}
+  body{background:var(--bg);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding:32px 18px 64px}
+  main{max-width:760px;margin:0 auto}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 4px}
+  h2{font-size:1.25rem;margin:36px 0 8px;padding-top:12px;border-top:1px solid var(--line)}
+  h3{font-size:1.02rem;margin:20px 0 6px}
+  p,li{margin:8px 0}
+  ul{padding-left:22px}
+  .meta{color:var(--muted);margin:0 0 20px}
+  .summary{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:18px 0}
+  .summary ul{margin:6px 0 0}
+  table{border-collapse:collapse;width:100%;font-size:.94rem;margin:10px 0}
+  .tw{overflow-x:auto}
+  th,td{border-bottom:1px solid var(--line);padding:8px 8px;text-align:left;vertical-align:top}
+  th{color:var(--muted);font-weight:600}
+  code{font:.9em ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  a{color:var(--accent)}
+  mark.todo{background:var(--todo-bg);color:var(--todo-ink);padding:0 4px;border-radius:3px;font-weight:600}
+  footer{margin-top:40px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Numbo Privacy Policy</h1>
+<p class="meta">Effective 27 September 2026 · Applies to the Numbo app on Android and iOS</p>
+
+<div class="summary">
+  <strong>The short version</strong>
+  <ul>
+    <li><strong>Your records stay on your device.</strong> Profiles, names, dates of birth, habits, diary entries,
+    transactions, remedies and every number Numbo calculates are stored only on your phone or tablet.
+    Numbo has no account, no sign-in and no server, and the developer never receives them.</li>
+    <li><strong>Three things do use the network</strong>, and none of them carries your records:
+    anonymous <a href="#crash">crash reports</a> (you can switch them off),
+    <a href="#ads">banner ads</a> for users who have not bought Premium,
+    and the <a href="#purchases">Premium purchase</a>, which is handled entirely by the app store.</li>
+    <li><strong>Nothing is sold.</strong> Numbo does not sell or rent any information, and has none of your records to sell.</li>
+  </ul>
+</div>
+
+<h2 id="who">1. Who we are</h2>
+<p>Numbo is developed and published by Ajinkya Sanjay Joshi, an individual developer based in India
+("we", "us"). For anything in this policy, contact us at <a href="mailto:support@ajinkkya.com">support@ajinkkya.com</a>.</p>
+
+<h2 id="records">2. Your records never leave your device</h2>
+<p>Everything you enter into Numbo — profiles and their names and dates of birth, groups, habits and their logs,
+diary entries, transactions, remedies and findings, magic-number sightings, notes, saved AI results — and everything
+Numbo calculates from it, including numerology numbers, reports, streaks and Karma, is stored in a database
+<strong>on your device only</strong>.</p>
+<ul>
+  <li>There is <strong>no account and no sign-in</strong>. Numbo does not know who you are.</li>
+  <li>We <strong>do not operate any server</strong> that receives your records, and Numbo does not send them anywhere.</li>
+  <li>Your records are <strong>never included</strong> in crash reports, ad requests or purchase transactions.
+  The app enforces this in code: it refuses to attach names, dates of birth, notes, amounts or numerology numbers to a crash report.</li>
+  <li>If you uninstall Numbo, its data is removed from your device along with it, unless you have made a backup.</li>
+</ul>
+
+<h2 id="backups">3. Backups</h2>
+<p>You can create a backup of your Numbo data from Settings. A backup is:</p>
+<ul>
+  <li><strong>Encrypted with a passphrase you choose</strong>, using AES-256-GCM with a key derived from your passphrase
+  (PBKDF2-HMAC-SHA256). Without the passphrase, the file cannot be read. We never see your passphrase and cannot recover it.</li>
+  <li><strong>Saved wherever you choose</strong> — a folder on your device, or any app or service you pick in your device's share or
+  save dialog. Numbo itself never uploads a backup. If you choose to save it to a cloud storage service, that service's own
+  privacy policy applies to the file you store there.</li>
+</ul>
+
+<h2 id="crash">4. Crash reports</h2>
+<p>If Numbo crashes, it can send an anonymous crash report so the fault can be found and fixed. Crash reports are
+collected by <strong>Firebase Crashlytics</strong>, a service provided by Google.</p>
+<div class="tw"><table>
+  <tr><th>A crash report contains</th><th>A crash report never contains</th></tr>
+  <tr>
+    <td>The technical trace of what went wrong · the app version · your device model · its operating system and version ·
+    a coarse region · a random installation identifier generated by the crash-reporting service</td>
+    <td>Anything you have entered into Numbo · any number Numbo has calculated about you · your name, date of birth,
+    notes or amounts · your contacts, location or photos</td>
+  </tr>
+</table></div>
+<ul>
+  <li><strong>You can switch crash reports off</strong> at any time in <em>Settings → Privacy → Send anonymous crash reports</em>.
+  When it is off, nothing is sent — including reports for crashes that have already happened.</li>
+  <li>Crash reports are used only to find and fix faults in Numbo — never for advertising or profiling.</li>
+  <li>Google retains crash data for up to 90 days. See
+  <a href="https://firebase.google.com/support/privacy">Firebase's privacy information</a>.</li>
+</ul>
+
+<h2 id="ads">5. Advertising</h2>
+<p>If you have not bought Premium, Numbo shows <strong>banner ads</strong> on a few read-only screens. Ads are provided by
+<strong>Google AdMob</strong>. Numbo never shows ads to Premium users, and never shows them on a form, during the daily check-in,
+or in a notification.</p>
+<ul>
+  <li><strong>What the ad service receives:</strong> to show and measure an ad, Google's ad service collects information such as
+  your device's advertising identifier (on Android), your IP address, device and operating-system details, and how you
+  interact with the ad. It does <strong>not</strong> receive any of your Numbo records.</li>
+  <li><strong>Consent in the EEA, UK and Switzerland:</strong> before any ad is requested, Numbo asks for your consent through
+  Google's consent form. You can change your choice at any time in <em>Settings → Privacy → Ad privacy choices</em>.</li>
+  <li><strong>On iOS:</strong> Numbo never asks for permission to track you across apps and websites, so
+  your device's advertising identifier is not available to the ad service, and ads on iOS are not
+  personalised using it.</li>
+  <li><strong>On Android:</strong> you can reset or delete your advertising ID, or opt out of personalised ads, in your device's
+  settings (<em>Settings → Privacy → Ads</em>, or <em>Google → Ads</em>, depending on your device).</li>
+  <li><strong>Remove all ads</strong> with the one-time Premium purchase.</li>
+</ul>
+<p>How Google uses information from apps that use its services:
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.</p>
+
+<h2 id="purchases">6. Premium purchase</h2>
+<p>Premium is a one-time purchase made through <strong>Google Play</strong> (Android) or the <strong>App Store</strong> (iOS).
+The store handles the entire transaction, including your payment details, under its own privacy policy.</p>
+<ul>
+  <li>Numbo never sees your name, card or payment details.</li>
+  <li>Numbo receives only the store's confirmation that Premium is owned, and stores a single "Premium is unlocked" flag on your device.</li>
+  <li>Restoring a purchase asks the store again; nothing is kept by us.</li>
+</ul>
+
+<h2 id="device">7. Things that stay on your device</h2>
+<ul>
+  <li><strong>Reminders and notifications</strong> are scheduled by Numbo on your device. They are not sent through any server,
+  and turning them off stops them entirely.</li>
+  <li><strong>AI prompts.</strong> Numbo can build a text prompt from a record for you to paste into an AI chat app of your choice.
+  Numbo only copies the text; it does not send it anywhere. An option lets you leave your name and date of birth out of
+  the prompt. If you paste a prompt into another service, that service's privacy policy applies.</li>
+  <li><strong>Sharing.</strong> When you use a Share button, Numbo hands the content to your device's share sheet and you choose
+  where it goes.</li>
+  <li><strong>Ratings.</strong> Numbo may occasionally show your app store's own rating prompt. Your rating goes to the store; Numbo
+  receives nothing.</li>
+  <li><strong>Settings and preferences</strong> — theme, accent colour, section layout and similar — are stored on your device only.</li>
+</ul>
+
+<h2 id="permissions">8. Device permissions</h2>
+<div class="tw"><table>
+  <tr><th>Permission</th><th>Why</th></tr>
+  <tr><td>Internet and network state</td><td>Crash reports, ads and the Premium purchase. Your records are never sent.</td></tr>
+  <tr><td>Notifications</td><td>Reminders. Numbo asks once, the first time you open it; you can decline, and Numbo works fully without it. You can change your mind in your device's settings.</td></tr>
+  <tr><td>Run at start-up, vibration</td><td>Re-schedule your reminders after the device restarts, and vibrate when one arrives.</td></tr>
+  <tr><td>Billing (Android)</td><td>The Premium purchase through Google Play.</td></tr>
+  <tr><td>Advertising ID and related ad services (Android)</td><td>Used by the ad service to show and measure ads to users who have not bought Premium.</td></tr>
+  <tr><td>Keep awake, foreground service (Android)</td><td>Required by third-party components (the ad service and Android's work scheduler) for short background tasks. Numbo's own code runs no background service.</td></tr>
+</table></div>
+<p>Numbo does <strong>not</strong> request access to your location, camera, microphone, contacts, photos or files.</p>
+
+<h2 id="children">9. Children</h2>
+<p>Numbo is not directed at children under 13, and we do not knowingly collect information from them. Because your records
+stay on your device, we hold no records of any user, including children.</p>
+
+<h2 id="rights">10. Your choices and rights</h2>
+<p>Because your records exist only on your device, <strong>you already hold them</strong>: you can view, edit, back up or delete any
+of them inside the app, and uninstalling Numbo removes them.</p>
+<ul>
+  <li><strong>Crash reports:</strong> switch them off in Settings → Privacy.</li>
+  <li><strong>Ads:</strong> change your consent choice in the app (EEA, UK and Switzerland), reset your advertising ID in your device
+  settings, or remove ads with Premium.</li>
+  <li>Depending on where you live — including under the EU and UK GDPR and India's Digital Personal Data Protection Act,
+  2023 — you may have rights to access, correct or erase personal data, to object to processing, and to complain to your data
+  protection authority. For the limited data handled by Google's services, you can also exercise these rights directly with Google.
+  To contact us about any of this, write to <a href="mailto:support@ajinkkya.com">support@ajinkkya.com</a>.</li>
+</ul>
+
+<h2 id="security">11. Security</h2>
+<p>Your records are stored in the app's private storage, which other apps cannot read. Backups are encrypted with your
+passphrase. Crash reports and ad requests are sent over encrypted connections.</p>
+
+<h2 id="changes">12. Changes to this policy</h2>
+<p>If Numbo's handling of information changes, we will update this page and its effective date before the change reaches you
+in an app update.</p>
+
+<h2 id="contact">13. Contact</h2>
+<p>Ajinkya Sanjay Joshi<br>
+Email: <a href="mailto:support@ajinkkya.com">support@ajinkkya.com</a></p>
+
+<footer>© 2026 Ajinkya Sanjay Joshi. Numbo keeps your records on your device.</footer>
+
+<!--
+  NOTE A — ad consent withdrawal: RESOLVED 2026-09-26 (CL-F11-20260926-2300-001). The entry point
+  is Settings → Privacy → "Ad privacy choices", shown only where the consent SDK reports it is
+  required and never to Premium users. It re-opens the consent form and re-reads consent when the
+  form closes, so a changed choice applies without a restart.
+-->
+
+</main>
+</body>
+</html>
