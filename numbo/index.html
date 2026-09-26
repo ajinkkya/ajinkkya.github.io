@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Numbo — numerology meets your everyday life</title>
+<meta name="description" content="Numbo brings numerology together with habit tracking, a diary and expense tracking, then finds patterns in your own records. Everything stays on your device.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<!--
+  Numbo product + support page — https://ajinkkya.com/numbo/ — CL-F19-20260926-2030-001.
+
+  Doubles as the SUPPORT URL App Store Connect requires (a web page, not only an email), so the
+  support section must always carry a working contact. Keep every feature claim true to the shipped
+  app: this page is linked from both store listings.
+
+  🔴 No store, platform or company names in the copy — the same rule as the app's own text
+     (Apple 2.3.10 / Play marketplace rules, and docs/ai/rules/ui_ux_conventions.md). Say
+     "phones and tablets", not the platform names. Store badges can be added once the listings are
+     live — they are the one exception, since each store provides its own official badge for it.
+  🔴 The privacy-policy link below is commented out until privacy.html is published at
+     /numbo/privacy.html — publishing a page with a dead link is worse than no link. Uncomment it
+     in the same change that publishes the policy.
+
+  Standalone: no external scripts, fonts or trackers.
+-->
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#fef7ff; --ink:#1d1b20; --muted:#5f5a66; --line:#e6dfe9; --card:#ffffff;
+    --accent:#b35c00; --accent-soft:#fff1e0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141218; --ink:#ece6f0; --muted:#aaa3b3; --line:#34303c; --card:#1e1b24;
+           --accent:#ffb951; --accent-soft:#33260f; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  [hidden]{display:none!important}
+  body{background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding:40px 20px 64px}
+  main{max-width:760px;margin:0 auto}
+  .back{font-size:.92rem;color:var(--muted);text-decoration:none}
+  .back:hover{color:var(--accent)}
+  header{display:flex;gap:22px;align-items:center;margin:26px 0 12px;flex-wrap:wrap}
+  header img{width:104px;height:104px;border-radius:26px;flex:none}
+  h1{font-size:2.4rem;line-height:1.1;margin:0;letter-spacing:-.01em}
+  .tag{font-size:1.15rem;color:var(--muted);margin:6px 0 0}
+  .status{display:inline-block;margin:20px 0 8px;background:var(--accent-soft);color:var(--accent);
+    font-weight:600;font-size:.9rem;padding:6px 14px;border-radius:99px}
+  h2{font-size:1.35rem;margin:44px 0 12px}
+  p{margin:10px 0}
+  a{color:var(--accent)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:14px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+  .card h3{margin:0 0 6px;font-size:1.02rem}
+  .card p{margin:0;color:var(--muted);font-size:.95rem;line-height:1.55}
+  .promise{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:0 14px 14px 0;padding:14px 18px;margin:14px 0}
+  .promise ul{margin:6px 0 0;padding-left:20px}
+  .promise li{margin:5px 0}
+  .support{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px}
+  .support .email{font-size:1.15rem;font-weight:600}
+  details{border-bottom:1px solid var(--line);padding:12px 0}
+  summary{cursor:pointer;font-weight:600}
+  details p{color:var(--muted);margin:8px 0 2px}
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+
+<a class="back" href="../">← Ajinkya Sanjay Joshi</a>
+
+<header>
+  <img src="icon.png" alt="Numbo app icon" width="104" height="104">
+  <div>
+    <h1>Numbo</h1>
+    <p class="tag">Numerology meets your everyday life.</p>
+  </div>
+</header>
+<span class="status">Coming soon to phones and tablets</span>
+
+<p>Most numerology apps hand you fixed predictions. Numbo does something different: it sits alongside your
+habits, your diary and your spending, notes the numbers at the moment each thing happened, and then shows
+you the patterns in <em>your own</em> records — not someone else's forecast.</p>
+
+<h2>What's inside</h2>
+<div class="grid">
+  <div class="card"><h3>Your numbers</h3><p>Driver, conductor, name numbers, Lo Shu grid, pinnacles and more — for you and the people you care about.</p></div>
+  <div class="card"><h3>Compatibility</h3><p>Compare profiles and see how names, dates and numbers fit together, with every score explained.</p></div>
+  <div class="card"><h3>Habit tracker</h3><p>Build good habits, ease off the others, and see how your days line up with your numbers.</p></div>
+  <div class="card"><h3>Diary</h3><p>Write about your day; Numbo quietly records the numbers around each entry.</p></div>
+  <div class="card"><h3>Money</h3><p>Track income and spending, and find out whether certain days treat your wallet differently.</p></div>
+  <div class="card"><h3>Remedies</h3><p>Log what you try and whether it worked, so you learn what actually helps you.</p></div>
+  <div class="card"><h3>Magic numbers</h3><p>Note the numbers that keep appearing to you, and look back on when and where they showed up.</p></div>
+  <div class="card"><h3>Reports</h3><p>Tap any bar to see the exact records behind it — patterns you can check, not claims you have to trust.</p></div>
+</div>
+
+<h2>Private by design</h2>
+<div class="promise">
+  <strong>Your records never leave your device.</strong>
+  <ul>
+    <li>No account, no sign-in, no cloud sync. Numbo doesn't know who you are.</li>
+    <li>Works completely offline.</li>
+    <li>Encrypted backups, protected by a passphrase only you know — saved wherever you choose.</li>
+  </ul>
+</div>
+
+<h2>Free, with a one-time Premium</h2>
+<p>Numbo is free to use. A single <strong>one-time purchase</strong> unlocks deeper analysis and removes the
+banner ads — no subscription, nothing recurring. Your own records are never locked: every record stays
+readable and editable, and backup and restore are free for everyone, always.</p>
+
+<h2 id="support">Support</h2>
+<div class="support">
+  <p style="margin-top:0">Found a problem, have a question, or an idea for Numbo? Write any time:</p>
+  <p class="email"><a href="mailto:support@ajinkkya.com">support@ajinkkya.com</a></p>
+  <p style="margin-bottom:0;color:var(--muted);font-size:.95rem">Please mention your device model and the
+  Numbo version (Menu → About) if you're reporting a problem. <strong>Never send your backup file or its
+  passphrase</strong> — support never needs either.</p>
+</div>
+
+<details>
+  <summary>Moving to a new phone?</summary>
+  <p>In Numbo, open Settings → Backup &amp; Restore on the old phone, create a backup and save it somewhere you
+  can reach from the new one. Install Numbo on the new phone and restore it with the same passphrase.</p>
+</details>
+<details>
+  <summary>Reinstalled Numbo and Premium is gone?</summary>
+  <p>Open Settings → Numbo Premium → <em>Restore purchase</em>, signed in to the same store account you
+  bought it with. Premium is tied to that account, not to the phone.</p>
+</details>
+<details>
+  <summary>Does Numbo send my data anywhere?</summary>
+  <p>Your records, never. If you allow it, Numbo can send an anonymous crash report so faults get fixed — it
+  contains nothing you entered, and you can switch it off in Settings → Privacy. Free users also see banner ads.</p>
+</details>
+
+<!-- PRIVACY-LINK: uncomment in the same change that publishes /numbo/privacy.html
+<p style="margin-top:28px"><a href="privacy.html">Privacy policy</a></p>
+-->
+
+<footer>© 2026 Ajinkya Sanjay Joshi · <a href="../">ajinkkya.com</a></footer>
+
+</main>
+</body>
+</html>

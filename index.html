@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ajinkya Sanjay Joshi</title>
+<meta name="description" content="Ajinkya Sanjay Joshi — independent app developer, and maker of Numbo.">
+<link rel="icon" type="image/png" href="favicon.png">
+<!--
+  Homepage of https://ajinkkya.com — CL-F19-20260926-2030-001.
+
+  SOURCE OF TRUTH: docs/launch/site/ in the private numbo_two repository. The public repo
+  ajinkkya/ajinkkya.github.io is a COPY of this folder, laid out identically. Edit here, then copy.
+
+  This page is deliberately small. It exists so the domain has a real front page (both stores and
+  AdMob check the developer website), and it is shaped to grow into a portfolio: add a card to the
+  "Apps" list per app, or new sections below it.
+
+  Standalone: no external scripts, fonts or trackers — nothing on this site loads anything from
+  anyone else, which is the same promise Numbo makes.
+-->
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#fef7ff; --ink:#1d1b20; --muted:#5f5a66; --line:#e6dfe9; --card:#ffffff;
+    --accent:#b35c00; --accent-soft:#fff1e0;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141218; --ink:#ece6f0; --muted:#aaa3b3; --line:#34303c; --card:#1e1b24;
+           --accent:#ffb951; --accent-soft:#33260f; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  [hidden]{display:none!important}
+  body{background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    padding:56px 20px 64px}
+  main{max-width:720px;margin:0 auto}
+  h1{font-size:2.2rem;line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
+  .lede{font-size:1.15rem;color:var(--muted);margin:0 0 40px}
+  h2{font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:40px 0 14px}
+  a{color:var(--accent)}
+  .app{display:flex;gap:18px;align-items:center;text-decoration:none;color:inherit;
+    background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px;
+    transition:border-color .15s, transform .15s}
+  .app:hover{border-color:var(--accent);transform:translateY(-1px)}
+  .app img{width:72px;height:72px;border-radius:18px;flex:none}
+  .app h3{margin:0 0 4px;font-size:1.2rem}
+  .app p{margin:0;color:var(--muted);font-size:.97rem;line-height:1.5}
+  .app .go{margin-left:auto;color:var(--accent);font-weight:600;white-space:nowrap}
+  @media (max-width:480px){ .app{flex-wrap:wrap} .app .go{margin-left:0} }
+  footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+
+<h1>Ajinkya Sanjay Joshi</h1>
+<p class="lede">I build small, careful apps that keep your information on your own device.</p>
+
+<h2>Apps</h2>
+<a class="app" href="numbo/">
+  <img src="numbo/icon.png" alt="" width="72" height="72">
+  <div>
+    <h3>Numbo</h3>
+    <p>Numerology alongside your habits, diary and expenses — reports built from your own life, stored only on your phone.</p>
+  </div>
+  <span class="go">Learn more →</span>
+</a>
+
+<h2>Contact</h2>
+<p>For help with Numbo, write to <a href="mailto:support@ajinkkya.com">support@ajinkkya.com</a>.</p>
+
+<footer>© 2026 Ajinkya Sanjay Joshi</footer>
+
+</main>
+</body>
+</html>
