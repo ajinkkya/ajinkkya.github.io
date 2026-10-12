@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Numbo Early Testing</title>
+<meta name="description" content="How to join the Numbo early-testing group: what it is, the steps, and how to send feedback.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<!-- Link preview for chat and social apps. The image is composed by
+     assets/branding/store/social/compose_social.py (target: link_preview). -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Numbo">
+<meta property="og:title" content="Help test Numbo before it launches">
+<meta property="og:description" content="A new numerology app. Android phone, 14 days, voluntary and unpaid. Steps in English, Hindi and Marathi.">
+<meta property="og:url" content="https://ajinkkya.com/numbo/testing.html">
+<meta property="og:image" content="https://ajinkkya.com/numbo/testing_preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!--
+  Numbo tester instructions — https://ajinkkya.com/numbo/testing.html — CL-F11-20260927-1800-001.
+  2026-10-12 (CL-F19-20261012-1959-001): sign-up moved from a private message to the sign-up form;
+  testers are members of a tester group and may have to accept an invite; the joining link is
+  emailed only after the store approves the test, so nothing here promises it quickly.
+
+  For the people recruited to Play's closed test (12 testers, opted in for 14 continuous days).
+  Written for readers who have never tested an app before. English (default) · Hindi · Marathi.
+
+  ⚠️ This page NAMES Google Play, Gmail and Android on purpose — a tester cannot follow the steps
+     without them. That is why it is NOT linked from numbo/index.html (the App Store Support URL,
+     which keeps the no-store-names rule) and carries noindex. Share it only by direct link.
+  🔴 No reward of any kind is offered or implied — unpaid, voluntary testing only. Do not add a
+     "thank-you gift", free Premium, or a prize draw: Play treats incentivised testing / reviews as
+     manipulation and can close the developer account.
+  🔴 Never print the personal Gmail here. Feedback goes to support@ajinkkya.com.
+
+  Language switch: every language is a <section data-lang>. Without JavaScript only English shows.
+  A link ending #hi or #mr opens that language directly.
+  Standalone: no external scripts, fonts or trackers.
+-->
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#fef7ff; --ink:#1d1b20; --muted:#5f5a66; --line:#e6dfe9; --card:#ffffff;
+    --accent:#b35c00; --accent-soft:#fff1e0; --ok:#1e6b3a; --ok-soft:#e5f4ea;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#141218; --ink:#ece6f0; --muted:#aaa3b3; --line:#34303c; --card:#1e1b24;
+           --accent:#ffb951; --accent-soft:#33260f; --ok:#8fd6a6; --ok-soft:#15291c; }
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  [hidden]{display:none!important}
+  body{background:var(--bg);color:var(--ink);
+    font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Noto Sans Devanagari",Arial,sans-serif;
+    padding:32px 16px 64px}
+  main{max-width:760px;margin:0 auto}
+  .back{font-size:.92rem;color:var(--muted);text-decoration:none}
+  header{display:flex;gap:18px;align-items:center;margin:22px 0 8px;flex-wrap:wrap}
+  header img{width:80px;height:80px;border-radius:20px;flex:none}
+  h1{font-size:2rem;line-height:1.15;margin:0}
+  .tag{color:var(--muted);margin:4px 0 0}
+  .langs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 6px}
+  .langs button{font:inherit;font-size:.95rem;padding:6px 16px;border-radius:99px;cursor:pointer;
+    border:1px solid var(--line);background:var(--card);color:var(--ink)}
+  .langs button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--bg);font-weight:600}
+  h2{font-size:1.3rem;margin:38px 0 10px}
+  p{margin:10px 0}
+  a{color:var(--accent)}
+  .note{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);
+    border-radius:0 14px 14px 0;padding:12px 18px;margin:14px 0}
+  .free{background:var(--ok-soft);border-left-color:var(--ok)}
+  ol.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0}
+  ol.steps>li{counter-increment:s;position:relative;background:var(--card);border:1px solid var(--line);
+    border-radius:14px;padding:14px 16px 14px 60px;margin:10px 0}
+  ol.steps>li::before{content:counter(s);position:absolute;left:16px;top:14px;width:30px;height:30px;
+    border-radius:50%;background:var(--accent-soft);color:var(--accent);font-weight:700;
+    display:flex;align-items:center;justify-content:center}
+  ol.steps strong{display:block}
+  ul{padding-left:22px}
+  li{margin:5px 0}
+  .email{font-size:1.15rem;font-weight:600;word-break:break-all}
+  details{border-bottom:1px solid var(--line);padding:12px 0}
+  summary{cursor:pointer;font-weight:600}
+  details p{color:var(--muted);margin:8px 0 2px}
+  .cta{display:block;width:fit-content;margin:10px 0 2px;padding:10px 22px;border-radius:99px;background:var(--accent);
+    color:var(--bg);font-weight:600;text-decoration:none}
+  footer{margin-top:52px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+
+<a class="back" href="./">← Numbo</a>
+
+<header>
+  <img src="icon.png" alt="Numbo app icon" width="80" height="80">
+  <div>
+    <h1>Numbo early testing</h1>
+    <p class="tag">Numerology · habits · diary · money</p>
+  </div>
+</header>
+
+<div class="langs" role="group" aria-label="Language">
+  <button type="button" data-set="en" aria-pressed="true">English</button>
+  <button type="button" data-set="hi" aria-pressed="false">हिन्दी</button>
+  <button type="button" data-set="mr" aria-pressed="false">मराठी</button>
+</div>
+
+<!-- ============================== ENGLISH ============================== -->
+<section data-lang="en" lang="en">
+
+<p>Thank you for your interest in testing Numbo! This page explains everything in simple steps. You don't
+need any experience with app testing — if you can install an app from the Play Store, you can do this.</p>
+
+<h2>What is this?</h2>
+<p>Numbo is a new app that brings numerology together with a habit tracker, a diary and a money tracker,
+then shows you patterns in <em>your own</em> records. Before a new app can be released to everyone on
+Google Play, Google asks the developer to let a small group of real people use it for
+<strong>14 days</strong>. You would be one of those people.</p>
+
+<div class="note free">
+  <strong>This is voluntary and unpaid.</strong> There is no payment, gift, prize or reward of any kind for
+  joining — only my sincere thanks. Please join only if you are genuinely curious about the app.
+</div>
+
+<h2>Who can join?</h2>
+<ul>
+  <li>You have an <strong>Android</strong> phone or tablet (iPhone is not part of this round).</li>
+  <li>You have a <strong>Gmail / Google account</strong> signed in to the Play Store on that phone.</li>
+  <li>You can keep the app installed for <strong>14 days</strong> and open it now and then.</li>
+</ul>
+
+<h2>How to join — step by step</h2>
+<ol class="steps">
+  <li><strong>Fill in the short sign-up form</strong>
+    Sign in to the form with the Gmail that is signed in to the Play Store on your phone.
+    (To check: open Play Store → tap your profile picture at the top right.) If the form asks you to
+    sign in, or doesn't open properly, open the link in Chrome.
+    <a class="cta" href="https://forms.gle/EtDNKJoTa5vyYe71A">Open the sign-up form</a></li>
+  <li><strong>Accept the group invite, if you get one</strong>
+    Your Gmail is added to our tester group. Most people don't have to do anything. If you get an
+    email inviting you to the group “Numbo Testers”, open it and accept.</li>
+  <li><strong>Wait for the joining link by email</strong>
+    As soon as Google approves the test, usually within about a week, the link is emailed to you from
+    support@ajinkkya.com. Please check your spam folder too. There is nothing to install until then.</li>
+  <li><strong>Open the link on your phone and tap “Become a tester”</strong>
+    Open it in Chrome while signed in with the <em>same</em> Gmail. You'll see a Google Play page —
+    tap <em>Become a tester</em> and wait for the confirmation.</li>
+  <li><strong>Install Numbo</strong>
+    On that same page tap <em>Download it on Google Play</em>, then <em>Install</em>. If the app doesn't
+    show yet, wait an hour or two and try again — that is normal for a new tester. The store page may
+    still show a temporary name and a plain icon; that is normal too. Once installed, the app is called
+    Numbo and has an elephant icon.</li>
+  <li><strong>Use it for 14 days</strong>
+    Open Numbo a few times a week — create your profile, look at your numbers, log a habit, write a
+    diary entry or record an expense. Whatever feels natural. There are no tasks to finish.</li>
+  <li><strong>Tell me what you think</strong>
+    Email your feedback any time (details below). Even one short message is very helpful.</li>
+</ol>
+
+<div class="note">
+  <strong>The two most important things:</strong>
+  <ul>
+    <li><strong>Please don't uninstall the app or leave the testing group before the 14 days are over.</strong>
+      Google counts the 14 days only while you stay in the group.</li>
+    <li><strong>Use the same Gmail everywhere</strong> — the one you signed up with, the one in Chrome, and the one in the Play Store.</li>
+  </ul>
+</div>
+
+<h2>Sending feedback</h2>
+<p>Write to:</p>
+<p class="email"><a href="mailto:support@ajinkkya.com?subject=Numbo%20tester%20feedback">support@ajinkkya.com</a></p>
+<p>Please start the subject with <strong>“Numbo tester feedback”</strong>. Write in English, Hindi or Marathi —
+whatever is easiest. Anything helps:</p>
+<ul>
+  <li><strong>What you liked</strong> — which screens or ideas felt useful.</li>
+  <li><strong>What you didn't like</strong> or found confusing.</li>
+  <li><strong>Problems</strong> — something broke, looked wrong, or closed suddenly. Tell me what you
+    were doing, your phone model, and add a screenshot if you can.</li>
+  <li><strong>Ideas</strong> — anything you wish the app did.</li>
+</ul>
+<p>You can also send private feedback from the app's page in the Play Store.</p>
+
+<h2>Your privacy</h2>
+<ul>
+  <li>Everything you enter in Numbo stays <strong>on your phone</strong>. There is no account and no cloud —
+    I can't see your names, dates, diary or expenses.</li>
+  <li>Your Gmail address is used <strong>only</strong> to add you to the tester group and to send you the
+    joining link. It is deleted when testing ends and is never shared.</li>
+  <li>If the app crashes, it may send an anonymous crash report containing nothing you entered. You can
+    switch this off in Settings → Privacy.</li>
+  <li>Feel free to use made-up names and dates while testing — that is completely fine.</li>
+  <li>Full details: <a href="privacy.html">Privacy policy</a>.</li>
+</ul>
+
+<h2>Common questions</h2>
+<details><summary>Do I need to pay for anything?</summary>
+  <p>No. The app is free. There is an optional Premium upgrade — please don't buy it during testing. If a
+  payment screen ever asks for real money, just cancel.</p></details>
+<details><summary>I see ads in the app. Should I tap them?</summary>
+  <p>Please don't tap ads on purpose to “help” — it doesn't help and can cause trouble. Just use the app normally.</p></details>
+<details><summary>“App not available” or I can't find it in the Play Store</summary>
+  <p>Make sure you tapped <em>Become a tester</em> first, and that the Play Store is signed in with the same
+  Gmail you signed up with. If you got an email inviting you to the group “Numbo Testers”, accept it first.
+  New testers sometimes need to wait a few hours.</p></details>
+<details><summary>What happens after 14 days?</summary>
+  <p>You can keep the app — it stays on your phone and will keep receiving updates. You may leave the
+  testing group any time after the 14 days.</p></details>
+<details><summary>Will anyone know I'm a tester?</summary>
+  <p>No. Your name and email are not shown anywhere publicly.</p></details>
+
+</section>
+
+<!-- ============================== HINDI ============================== -->
+<section data-lang="hi" lang="hi" hidden>
+
+<p>Numbo की टेस्टिंग में रुचि लेने के लिए धन्यवाद! इस पेज पर सब कुछ आसान स्टेप्स में समझाया गया है। आपको
+ऐप टेस्टिंग का कोई अनुभव नहीं चाहिए — अगर आप Play Store से ऐप इंस्टॉल कर सकते हैं, तो आप यह कर सकते हैं।</p>
+
+<h2>यह क्या है?</h2>
+<p>Numbo एक नया ऐप है जो अंक ज्योतिष (न्यूमरोलॉजी) को हैबिट ट्रैकर, डायरी और खर्च ट्रैकर के साथ जोड़ता है, और
+फिर <em>आपके अपने</em> रिकॉर्ड में पैटर्न दिखाता है। किसी नए ऐप को Google Play पर सबके लिए जारी करने से पहले,
+Google डेवलपर से कहता है कि कुछ असली लोग उसे <strong>14 दिन</strong> तक इस्तेमाल करें। आप उन लोगों में से एक होंगे।</p>
+
+<div class="note free">
+  <strong>यह पूरी तरह स्वैच्छिक और बिना भुगतान का है।</strong> इसमें शामिल होने के लिए कोई पैसा, उपहार, इनाम या
+  किसी भी तरह का लाभ नहीं है — सिर्फ़ मेरा दिल से धन्यवाद। कृपया तभी जुड़ें जब आपको सच में ऐप में रुचि हो।
+</div>
+
+<h2>कौन जुड़ सकता है?</h2>
+<ul>
+  <li>आपके पास <strong>Android</strong> फ़ोन या टैबलेट हो (इस बार iPhone शामिल नहीं है)।</li>
+  <li>उस फ़ोन के Play Store में आपका <strong>Gmail / Google अकाउंट</strong> साइन-इन हो।</li>
+  <li>आप <strong>14 दिन</strong> तक ऐप इंस्टॉल रख सकें और बीच-बीच में खोल सकें।</li>
+</ul>
+
+<h2>कैसे जुड़ें — स्टेप बाय स्टेप</h2>
+<ol class="steps">
+  <li><strong>छोटा साइन-अप फ़ॉर्म भरें</strong>
+    फ़ॉर्म में उसी Gmail से साइन-इन करें जो आपके फ़ोन के Play Store में साइन-इन है। (देखने के लिए: Play Store
+    खोलें → ऊपर दाईं ओर अपनी प्रोफ़ाइल फ़ोटो पर टैप करें।) अगर फ़ॉर्म साइन-इन माँगे या ठीक से न खुले, तो लिंक को
+    Chrome में खोलें।
+    <a class="cta" href="https://forms.gle/EtDNKJoTa5vyYe71A">साइन-अप फ़ॉर्म खोलें</a></li>
+  <li><strong>ग्रुप का निमंत्रण आए तो स्वीकार करें</strong>
+    आपका Gmail हमारे टेस्टर ग्रुप में जोड़ा जाएगा। ज़्यादातर लोगों को कुछ करना नहीं पड़ता। अगर आपको
+    “Numbo Testers” ग्रुप में शामिल होने का ईमेल आए, तो उसे खोलकर स्वीकार करें।</li>
+  <li><strong>ईमेल से जॉइनिंग लिंक का इंतज़ार करें</strong>
+    जैसे ही Google टेस्ट को मंज़ूरी देगा, आम तौर पर लगभग एक हफ़्ते में, support@ajinkkya.com से आपको लिंक
+    ईमेल किया जाएगा। कृपया स्पैम फ़ोल्डर भी देखें। तब तक कुछ इंस्टॉल नहीं करना है।</li>
+  <li><strong>फ़ोन पर लिंक खोलें और “Become a tester” पर टैप करें</strong>
+    इसे Chrome में <em>उसी</em> Gmail से साइन-इन रहते हुए खोलें। Google Play का एक पेज दिखेगा —
+    <em>Become a tester</em> पर टैप करें और पुष्टि का इंतज़ार करें।</li>
+  <li><strong>Numbo इंस्टॉल करें</strong>
+    उसी पेज पर <em>Download it on Google Play</em> पर टैप करें, फिर <em>Install</em>। अगर ऐप अभी न दिखे, तो एक-दो
+    घंटे बाद फिर कोशिश करें — नए टेस्टर के लिए यह सामान्य है। स्टोर पेज पर अभी अस्थायी नाम और सादा आइकन
+    दिख सकता है — यह भी सामान्य है। इंस्टॉल होने के बाद ऐप का नाम Numbo होगा और आइकन में हाथी होगा।</li>
+  <li><strong>14 दिन तक इस्तेमाल करें</strong>
+    हफ़्ते में कुछ बार Numbo खोलें — अपनी प्रोफ़ाइल बनाएँ, अपने अंक देखें, कोई आदत लॉग करें, डायरी लिखें या कोई खर्च
+    दर्ज करें। जो स्वाभाविक लगे, वही करें। कोई काम पूरा करना ज़रूरी नहीं है।</li>
+  <li><strong>मुझे अपनी राय बताएँ</strong>
+    कभी भी ईमेल से फ़ीडबैक भेजें (नीचे जानकारी है)। एक छोटा-सा मैसेज भी बहुत मदद करता है।</li>
+</ol>
+
+<div class="note">
+  <strong>दो सबसे ज़रूरी बातें:</strong>
+  <ul>
+    <li><strong>कृपया 14 दिन पूरे होने से पहले ऐप अनइंस्टॉल न करें और टेस्टिंग ग्रुप न छोड़ें।</strong>
+      Google 14 दिन तभी गिनता है जब आप ग्रुप में बने रहते हैं।</li>
+    <li><strong>हर जगह एक ही Gmail इस्तेमाल करें</strong> — जिससे आपने फ़ॉर्म भरा, जो Chrome में हो, और जो Play Store में हो।</li>
+  </ul>
+</div>
+
+<h2>फ़ीडबैक कैसे भेजें</h2>
+<p>यहाँ लिखें:</p>
+<p class="email"><a href="mailto:support@ajinkkya.com?subject=Numbo%20tester%20feedback">support@ajinkkya.com</a></p>
+<p>कृपया ईमेल के विषय (subject) की शुरुआत <strong>“Numbo tester feedback”</strong> से करें। अंग्रेज़ी, हिन्दी या मराठी —
+जिसमें आसानी हो, उसमें लिखें। कुछ भी काम का है:</p>
+<ul>
+  <li><strong>क्या पसंद आया</strong> — कौन-सी स्क्रीन या बातें उपयोगी लगीं।</li>
+  <li><strong>क्या पसंद नहीं आया</strong> या समझ में नहीं आया।</li>
+  <li><strong>समस्याएँ</strong> — कुछ काम नहीं किया, गलत दिखा या ऐप अचानक बंद हो गया। बताएँ कि आप क्या कर रहे थे,
+    आपके फ़ोन का मॉडल क्या है, और हो सके तो स्क्रीनशॉट जोड़ें।</li>
+  <li><strong>सुझाव</strong> — आप ऐप में और क्या चाहेंगे।</li>
+</ul>
+<p>आप Play Store में ऐप के पेज से भी प्राइवेट फ़ीडबैक भेज सकते हैं।</p>
+
+<h2>आपकी प्राइवेसी</h2>
+<ul>
+  <li>Numbo में आप जो भी डालते हैं, वह <strong>आपके फ़ोन पर ही</strong> रहता है। न कोई अकाउंट है, न क्लाउड —
+    आपके नाम, तारीखें, डायरी या खर्च मुझ तक कभी नहीं पहुँचते।</li>
+  <li>आपका Gmail पता <strong>सिर्फ़</strong> आपको टेस्टर ग्रुप में जोड़ने और जॉइनिंग लिंक भेजने के लिए इस्तेमाल होगा।
+    टेस्टिंग खत्म होने पर इसे हटा दिया जाएगा, और इसे किसी से साझा नहीं किया जाएगा।</li>
+  <li>अगर ऐप क्रैश हो, तो वह एक गुमनाम क्रैश रिपोर्ट भेज सकता है जिसमें आपकी डाली हुई कोई जानकारी नहीं होती। इसे
+    Settings → Privacy में बंद किया जा सकता है।</li>
+  <li>टेस्टिंग के दौरान आप काल्पनिक नाम और तारीखें भी इस्तेमाल कर सकते हैं — यह बिल्कुल ठीक है।</li>
+  <li>पूरी जानकारी: <a href="privacy.html">Privacy policy</a> (अंग्रेज़ी में)।</li>
+</ul>
+
+<h2>आम सवाल</h2>
+<details><summary>क्या मुझे कुछ भुगतान करना होगा?</summary>
+  <p>नहीं। ऐप मुफ़्त है। इसमें एक वैकल्पिक Premium अपग्रेड है — कृपया टेस्टिंग के दौरान इसे न खरीदें। अगर कभी कोई
+  पेमेंट स्क्रीन असली पैसे माँगे, तो बस कैंसल कर दें।</p></details>
+<details><summary>ऐप में विज्ञापन दिखते हैं। क्या उन पर टैप करूँ?</summary>
+  <p>कृपया “मदद” के लिए जानबूझकर विज्ञापनों पर टैप न करें — इससे मदद नहीं होती और परेशानी हो सकती है। बस ऐप सामान्य
+  रूप से इस्तेमाल करें।</p></details>
+<details><summary>“App not available” दिखता है या Play Store में ऐप नहीं मिलता</summary>
+  <p>पक्का करें कि आपने पहले <em>Become a tester</em> पर टैप किया है, और Play Store में वही Gmail साइन-इन है जिससे आपने
+  फ़ॉर्म भरा। अगर “Numbo Testers” ग्रुप में शामिल होने का ईमेल आया हो, तो पहले उसे स्वीकार करें। नए टेस्टर को
+  कभी-कभी कुछ घंटे इंतज़ार करना पड़ता है।</p></details>
+<details><summary>14 दिन के बाद क्या होगा?</summary>
+  <p>आप ऐप रख सकते हैं — यह आपके फ़ोन पर रहेगा और अपडेट मिलते रहेंगे। 14 दिन के बाद आप कभी भी टेस्टिंग ग्रुप छोड़
+  सकते हैं।</p></details>
+<details><summary>क्या किसी को पता चलेगा कि मैं टेस्टर हूँ?</summary>
+  <p>नहीं। आपका नाम और ईमेल कहीं भी सार्वजनिक रूप से नहीं दिखाया जाता।</p></details>
+
+</section>
+
+<!-- ============================== MARATHI ============================== -->
+<section data-lang="mr" lang="mr" hidden>
+
+<p>Numbo च्या टेस्टिंगमध्ये रस दाखवल्याबद्दल धन्यवाद! या पेजवर सर्व काही सोप्या स्टेप्समध्ये समजावले आहे. तुम्हाला
+ॲप टेस्टिंगचा कोणताही अनुभव लागत नाही — तुम्ही Play Store मधून ॲप इंस्टॉल करू शकत असाल, तर हे तुम्ही नक्की करू शकता.</p>
+
+<h2>हे काय आहे?</h2>
+<p>Numbo हे एक नवीन ॲप आहे जे अंकशास्त्राला (न्यूमरॉलॉजी) हॅबिट ट्रॅकर, डायरी आणि खर्च ट्रॅकरशी जोडते, आणि मग
+<em>तुमच्या स्वतःच्या</em> नोंदींमधील पॅटर्न दाखवते. नवीन ॲप Google Play वर सर्वांसाठी प्रसिद्ध करण्यापूर्वी, Google
+डेव्हलपरला सांगते की काही खऱ्या लोकांनी ते <strong>14 दिवस</strong> वापरावे. तुम्ही त्यांपैकी एक असाल.</p>
+
+<div class="note free">
+  <strong>हे पूर्णपणे स्वेच्छेने आणि विनामोबदला आहे.</strong> यात सहभागी होण्यासाठी कोणतेही पैसे, भेटवस्तू, बक्षीस किंवा
+  कोणताही मोबदला नाही — फक्त माझे मनापासून आभार. कृपया ॲपबद्दल खरोखर उत्सुकता असेल तरच सहभागी व्हा.
+</div>
+
+<h2>कोण सहभागी होऊ शकते?</h2>
+<ul>
+  <li>तुमच्याकडे <strong>Android</strong> फोन किंवा टॅबलेट असावा (या वेळी iPhone चा समावेश नाही).</li>
+  <li>त्या फोनच्या Play Store मध्ये तुमचे <strong>Gmail / Google अकाउंट</strong> साइन-इन असावे.</li>
+  <li>तुम्ही <strong>14 दिवस</strong> ॲप इंस्टॉल ठेवू शकाल आणि अधूनमधून उघडू शकाल.</li>
+</ul>
+
+<h2>कसे सहभागी व्हावे — स्टेप बाय स्टेप</h2>
+<ol class="steps">
+  <li><strong>छोटा साइन-अप फॉर्म भरा</strong>
+    तुमच्या फोनच्या Play Store मध्ये जो Gmail साइन-इन आहे, त्याच Gmail ने साइन-इन करून फॉर्म भरा. (तपासण्यासाठी:
+    Play Store उघडा → वर उजवीकडे तुमच्या प्रोफाइल फोटोवर टॅप करा.) फॉर्मने साइन-इन मागितले किंवा तो नीट उघडला
+    नाही, तर लिंक Chrome मध्ये उघडा.
+    <a class="cta" href="https://forms.gle/EtDNKJoTa5vyYe71A">साइन-अप फॉर्म उघडा</a></li>
+  <li><strong>ग्रुपचे आमंत्रण आले तर स्वीकारा</strong>
+    तुमचा Gmail आमच्या टेस्टर ग्रुपमध्ये जोडला जाईल. बहुतेकांना काहीच करावे लागत नाही. “Numbo Testers”
+    ग्रुपमध्ये सहभागी होण्याचा ईमेल आला, तर तो उघडून स्वीकारा.</li>
+  <li><strong>ईमेलने येणाऱ्या जॉइनिंग लिंकची वाट पहा</strong>
+    Google ने टेस्टला मंजुरी दिली की, साधारण एका आठवड्यात, support@ajinkkya.com वरून तुम्हाला लिंक ईमेल केली
+    जाईल. कृपया स्पॅम फोल्डरही तपासा. तोपर्यंत काहीही इंस्टॉल करायचे नाही.</li>
+  <li><strong>फोनवर लिंक उघडा आणि “Become a tester” वर टॅप करा</strong>
+    ती Chrome मध्ये <em>त्याच</em> Gmail ने साइन-इन असताना उघडा. Google Play चे एक पेज दिसेल —
+    <em>Become a tester</em> वर टॅप करा आणि पुष्टीची वाट पहा.</li>
+  <li><strong>Numbo इंस्टॉल करा</strong>
+    त्याच पेजवर <em>Download it on Google Play</em> वर टॅप करा, मग <em>Install</em>. ॲप अजून दिसत नसेल, तर एक-दोन
+    तासांनी पुन्हा प्रयत्न करा — नवीन टेस्टरसाठी हे सामान्य आहे. स्टोअर पेजवर अजून तात्पुरते नाव आणि साधा आयकॉन
+    दिसू शकतो — तेही सामान्य आहे. इंस्टॉल झाल्यावर ॲपचे नाव Numbo असेल आणि आयकॉनमध्ये हत्ती असेल.</li>
+  <li><strong>14 दिवस वापरा</strong>
+    आठवड्यातून काही वेळा Numbo उघडा — तुमची प्रोफाइल तयार करा, तुमचे अंक पहा, एखादी सवय नोंदवा, डायरी लिहा किंवा
+    एखादा खर्च नोंदवा. जे सहज वाटेल ते करा. कोणतेही काम पूर्ण करणे आवश्यक नाही.</li>
+  <li><strong>तुमचे मत मला कळवा</strong>
+    कधीही ईमेलने फीडबॅक पाठवा (माहिती खाली आहे). एक छोटासा मेसेजसुद्धा खूप मदत करतो.</li>
+</ol>
+
+<div class="note">
+  <strong>दोन सर्वात महत्त्वाच्या गोष्टी:</strong>
+  <ul>
+    <li><strong>कृपया 14 दिवस पूर्ण होण्यापूर्वी ॲप अनइंस्टॉल करू नका आणि टेस्टिंग ग्रुप सोडू नका.</strong>
+      तुम्ही ग्रुपमध्ये असतानाच Google 14 दिवस मोजते.</li>
+    <li><strong>सगळीकडे एकच Gmail वापरा</strong> — ज्याने तुम्ही फॉर्म भरला, जो Chrome मध्ये आहे, आणि जो Play Store मध्ये आहे.</li>
+  </ul>
+</div>
+
+<h2>फीडबॅक कसा पाठवायचा</h2>
+<p>येथे लिहा:</p>
+<p class="email"><a href="mailto:support@ajinkkya.com?subject=Numbo%20tester%20feedback">support@ajinkkya.com</a></p>
+<p>कृपया ईमेलच्या विषयाची (subject) सुरुवात <strong>“Numbo tester feedback”</strong> ने करा. इंग्रजी, हिंदी किंवा मराठी —
+जे सोपे वाटेल त्यात लिहा. काहीही उपयोगी आहे:</p>
+<ul>
+  <li><strong>काय आवडले</strong> — कोणत्या स्क्रीन किंवा कल्पना उपयोगी वाटल्या.</li>
+  <li><strong>काय आवडले नाही</strong> किंवा समजले नाही.</li>
+  <li><strong>अडचणी</strong> — काहीतरी चालले नाही, चुकीचे दिसले किंवा ॲप अचानक बंद झाले. तुम्ही काय करत होतात, तुमच्या
+    फोनचे मॉडेल कोणते, ते सांगा आणि शक्य असल्यास स्क्रीनशॉट जोडा.</li>
+  <li><strong>सूचना</strong> — ॲपमध्ये तुम्हाला आणखी काय हवे आहे.</li>
+</ul>
+<p>तुम्ही Play Store मधील ॲपच्या पेजवरूनही खाजगी फीडबॅक पाठवू शकता.</p>
+
+<h2>तुमची गोपनीयता</h2>
+<ul>
+  <li>तुम्ही Numbo मध्ये जे काही भरता ते <strong>तुमच्या फोनवरच</strong> राहते. कोणतेही अकाउंट नाही, क्लाउड नाही —
+    मी तुमची नावे, तारखा, डायरी किंवा खर्च पाहू शकत नाही.</li>
+  <li>तुमचा Gmail पत्ता <strong>फक्त</strong> तुम्हाला टेस्टर ग्रुपमध्ये जोडण्यासाठी आणि जॉइनिंग लिंक पाठवण्यासाठी
+    वापरला जाईल. टेस्टिंग संपल्यावर तो काढून टाकला जाईल, आणि तो कोणालाही दिला जाणार नाही.</li>
+  <li>ॲप क्रॅश झाल्यास ते एक निनावी क्रॅश रिपोर्ट पाठवू शकते, ज्यात तुम्ही भरलेली कोणतीही माहिती नसते. हे Settings →
+    Privacy मध्ये बंद करता येते.</li>
+  <li>टेस्टिंगदरम्यान तुम्ही काल्पनिक नावे आणि तारखाही वापरू शकता — ते अगदी चालेल.</li>
+  <li>संपूर्ण माहिती: <a href="privacy.html">Privacy policy</a> (इंग्रजीत).</li>
+</ul>
+
+<h2>नेहमीचे प्रश्न</h2>
+<details><summary>मला कशासाठी पैसे द्यावे लागतील का?</summary>
+  <p>नाही. ॲप मोफत आहे. त्यात एक पर्यायी Premium अपग्रेड आहे — कृपया टेस्टिंगदरम्यान ते विकत घेऊ नका. कधी पेमेंट
+  स्क्रीन खरे पैसे मागत असेल, तर फक्त कॅन्सल करा.</p></details>
+<details><summary>ॲपमध्ये जाहिराती दिसतात. त्यांवर टॅप करू का?</summary>
+  <p>कृपया “मदत” म्हणून मुद्दाम जाहिरातींवर टॅप करू नका — त्याने मदत होत नाही आणि अडचण येऊ शकते. फक्त ॲप नेहमीसारखे
+  वापरा.</p></details>
+<details><summary>“App not available” दिसते किंवा Play Store मध्ये ॲप सापडत नाही</summary>
+  <p>तुम्ही आधी <em>Become a tester</em> वर टॅप केले आहे आणि Play Store मध्ये तोच Gmail साइन-इन आहे ज्याने तुम्ही
+  फॉर्म भरला, याची खात्री करा. “Numbo Testers” ग्रुपमध्ये सहभागी होण्याचा ईमेल आला असेल, तर आधी तो स्वीकारा.
+  नवीन टेस्टरला कधीकधी काही तास थांबावे लागते.</p></details>
+<details><summary>14 दिवसांनंतर काय होईल?</summary>
+  <p>तुम्ही ॲप ठेवू शकता — ते तुमच्या फोनवर राहील आणि अपडेट्स मिळत राहतील. 14 दिवसांनंतर तुम्ही कधीही टेस्टिंग ग्रुप
+  सोडू शकता.</p></details>
+<details><summary>मी टेस्टर आहे हे कोणाला कळेल का?</summary>
+  <p>नाही. तुमचे नाव आणि ईमेल कुठेही सार्वजनिकरीत्या दाखवले जात नाहीत.</p></details>
+
+</section>
+
+<footer>© 2026 Ajinkya Sanjay Joshi · <a href="./">Numbo</a> · <a href="mailto:support@ajinkkya.com">support@ajinkkya.com</a></footer>
+
+</main>
+<script>
+(function () {
+  var sections = document.querySelectorAll('section[data-lang]');
+  var buttons = document.querySelectorAll('.langs button');
+  function show(lang) {
+    if (!document.querySelector('section[data-lang="' + lang + '"]')) lang = 'en';
+    sections.forEach(function (s) { s.hidden = s.getAttribute('data-lang') !== lang; });
+    buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === lang)); });
+    document.documentElement.lang = lang;
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () {
+      var lang = b.getAttribute('data-set');
+      show(lang);
+      try { history.replaceState(null, '', lang === 'en' ? location.pathname : '#' + lang); } catch (e) {}
+    });
+  });
+  show(location.hash.replace('#', '') || 'en');
+})();
+</script>
+</body>
+</html>
